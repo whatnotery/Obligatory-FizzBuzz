@@ -44,6 +44,7 @@ function clear() {
 }
 
 function addButton() { 
+    input.value = ''
     let createButton = document.createElement('button')
         createButton.setAttribute('class', 'num')
         createButton.innerText = 'clear'
