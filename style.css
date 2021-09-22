@@ -9,3 +9,9 @@ input{
     color: chartreuse;
     border: none;
 }
+
+button {
+    background-color: black;
+    color: chartreuse;
+    border: chartreuse dashed;
+}
