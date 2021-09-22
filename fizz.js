@@ -1,7 +1,10 @@
 let input = document.querySelector('#number');
 let container = document.querySelector('#container');
 
+input.focus()
+
 input.addEventListener('keypress', function (e) {
+    
     if (e.key === 'Enter') {
         let maxNum = parseInt(input.value)
         for (i = 1; i <= maxNum; i++) {
