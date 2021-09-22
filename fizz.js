@@ -1,9 +1,6 @@
 let input = document.querySelector('#number');
 let container = document.querySelector('#container');
 
-
-
-
 input.addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
         let maxNum = parseInt(input.value)
@@ -18,20 +15,16 @@ input.addEventListener('keypress', function (e) {
                 addDiv(i)
             }
         }
-       addButton()
-       let button = document.querySelector('button')
-       button.addEventListener('click', function (e) {
-        clear()
-        
-    })
+        addButton()
+        input.value = ''
+        input.blur()
+        let button = document.querySelector('button')
+        button.addEventListener('click', function (e) {
+            clear()
+
+        })
     }
 });
-
-
-button.addEventListener('click', function (e) {
-    clear()
-})
-
 
 function addDiv(i) {
     let div = document.createElement('div')
@@ -43,10 +36,9 @@ function clear() {
     document.querySelectorAll('.num').forEach(e => e.remove());
 }
 
-function addButton() { 
-    input.value = ''
+function addButton() {
     let createButton = document.createElement('button')
-        createButton.setAttribute('class', 'num')
-        createButton.innerText = 'clear'
-        container.appendChild(createButton)
-    }
+    createButton.setAttribute('class', 'num')
+    createButton.innerText = 'clear'
+    container.appendChild(createButton)
+}
