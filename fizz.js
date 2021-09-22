@@ -27,7 +27,6 @@ input.addEventListener('keypress', function (e) {
 
         button.addEventListener('click', function (e) {
             clear()
-
         })
     }
 });
@@ -40,6 +39,8 @@ function addDiv(i) {
 
 function clear() {
     document.querySelectorAll('.num').forEach(e => e.remove());
+
+
 }
 
 function addButton() {
