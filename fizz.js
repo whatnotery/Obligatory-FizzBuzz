@@ -1,7 +1,8 @@
 input = document.querySelector('#number');
 
-input.addEventListener('input', function (e) {
+input.addEventListener('keypress', function (e) {
       let maxNum = parseInt(input.value)
+      if (e.key === 'Enter') {
 
       for (i = 1; i <= maxNum; i++) {
         
@@ -15,7 +16,7 @@ input.addEventListener('input', function (e) {
             addDiv(i)
         }
     
-    }
+    }}
 });
 
 
