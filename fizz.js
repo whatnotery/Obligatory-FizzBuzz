@@ -1,6 +1,6 @@
 let input = document.querySelector('#number');
 let container = document.querySelector('#container');
-let button = document.querySelector('#button')
+
 
 
 
@@ -18,6 +18,12 @@ input.addEventListener('keypress', function (e) {
                 addDiv(i)
             }
         }
+       addButton()
+       let button = document.querySelector('button')
+       button.addEventListener('click', function (e) {
+        clear()
+        
+    })
     }
 });
 
@@ -36,3 +42,10 @@ function addDiv(i) {
 function clear() {
     document.querySelectorAll('.num').forEach(e => e.remove());
 }
+
+function addButton() { 
+    let createButton = document.createElement('button')
+        createButton.setAttribute('class', 'num')
+        createButton.innerText = 'clear'
+        container.appendChild(createButton)
+    }

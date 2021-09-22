@@ -8,6 +8,7 @@ input{
     background-color: black;
     color: chartreuse;
     border: none;
+    width: fit-content;
 }
 
 button {
