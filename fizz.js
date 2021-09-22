@@ -4,7 +4,7 @@ let container = document.querySelector('#container');
 input.focus()
 
 input.addEventListener('keypress', function (e) {
-    
+
     if (e.key === 'Enter') {
         let maxNum = parseInt(input.value)
         for (i = 1; i <= maxNum; i++) {
@@ -19,9 +19,12 @@ input.addEventListener('keypress', function (e) {
             }
         }
         addButton()
+
         input.value = ''
         input.blur()
+
         let button = document.querySelector('button')
+
         button.addEventListener('click', function (e) {
             clear()
 
