@@ -3,3 +3,9 @@ body {
     color: chartreuse;
     font-family: monospace;
 }
+
+input{
+    background-color: black;
+    color: chartreuse;
+    border: none;
+}
