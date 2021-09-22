@@ -9,6 +9,7 @@ input{
     color: chartreuse;
     border: none;
     width: fit-content;
+    width: 20px;
 }
 
 button {
