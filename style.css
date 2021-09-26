@@ -2,7 +2,9 @@ body {
     background-color: black;
     color: chartreuse;
     font-family: monospace;
+    height: 95vh;
 }
+
 
 input{
     background-color: black;
@@ -16,4 +18,22 @@ button {
     background-color: black;
     color: chartreuse;
     border: chartreuse dashed;
+}
+
+.social {
+	background:rgba(255,255,255, 0.3);
+	color: chartreuse;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: chartreuse;
 }
