@@ -12,12 +12,26 @@ input{
     border: none;
     width: fit-content;
     width: 20px;
+    border-bottom: chartreuse dashed 1px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 button {
+    font-family: monospace;
     background-color: black;
     color: chartreuse;
-    border: chartreuse dashed;
+    border: chartreuse dashed 2px;
+    margin-top: 5px;
 }
 
 .social {
