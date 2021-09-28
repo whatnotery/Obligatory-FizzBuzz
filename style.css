@@ -25,14 +25,9 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-
-button {
-    font-family: monospace;
-    background-color: black;
-    color: chartreuse;
-    border: chartreuse dashed 2px;
-    margin-top: 5px;
-}
+ul {
+    list-style-image: url('icon.svg');
+  }
 
 .social {
 	background:rgba(255,255,255, 0.3);
